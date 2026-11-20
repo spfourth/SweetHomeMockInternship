@@ -595,7 +595,6 @@ public class HomeFurnitureController implements Controller {
    */
   public boolean isPropertyEditable(Property property) {
     switch (property) {
-      case DESCRIPTION :
       case PRICE :
         return false;
       case LIGHT_POWER :
@@ -1245,6 +1244,7 @@ public class HomeFurnitureController implements Controller {
     private final Float                       width;
     private final Float                       depth;
     private final Float                       height;
+    private final Float                       volume;
     private final FurniturePaint              paint;
     private final Integer                     color;
     private final HomeTexture                 texture;
@@ -1286,6 +1286,7 @@ public class HomeFurnitureController implements Controller {
       this.width = width;
       this.depth = depth;
       this.height = height;
+      this.volume = width*depth*height;
       this.paint = paint;
       this.color = color;
       this.texture = texture;

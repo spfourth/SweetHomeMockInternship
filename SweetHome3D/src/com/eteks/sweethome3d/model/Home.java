@@ -156,7 +156,7 @@ public class Home implements Serializable, Cloneable {
     this.furnitureVisibleProperties = Arrays.asList(new HomePieceOfFurniture.SortableProperty [] {
         HomePieceOfFurniture.SortableProperty.NAME,
         HomePieceOfFurniture.SortableProperty.WIDTH,
-        HomePieceOfFurniture.SortableProperty.DEPTH,
+        HomePieceOfFurniture.SortableProperty.DEPTH, HomePieceOfFurniture.SortableProperty.VOLUME,
         HomePieceOfFurniture.SortableProperty.HEIGHT,
         HomePieceOfFurniture.SortableProperty.VISIBLE});
     // Init transient lists and other fields
@@ -317,7 +317,7 @@ public class Home implements Serializable, Cloneable {
           HomePieceOfFurniture.SortableProperty.NAME,
           HomePieceOfFurniture.SortableProperty.WIDTH,
           HomePieceOfFurniture.SortableProperty.DEPTH,
-          HomePieceOfFurniture.SortableProperty.HEIGHT,
+          HomePieceOfFurniture.SortableProperty.HEIGHT,HomePieceOfFurniture.SortableProperty.VOLUME,
           HomePieceOfFurniture.SortableProperty.COLOR,
           HomePieceOfFurniture.SortableProperty.MOVABLE,
           HomePieceOfFurniture.SortableProperty.DOOR_OR_WINDOW,
@@ -488,6 +488,7 @@ public class Home implements Serializable, Cloneable {
       case WIDTH : 
       case DEPTH :
       case HEIGHT :
+      case VOLUME :
       case MOVABLE :
       case DOOR_OR_WINDOW :
       case COLOR :
